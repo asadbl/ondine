@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ondine</title>
+  <meta name="description" content="Ondine, maison de mode in Paris. Coats, dresses, tailoring, swim, knitwear and evening, shown in one walk." />
+  <meta name="theme-color" content="#0b0a0a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <div class="film" aria-hidden="true">
+    <canvas class="film__canvas"></canvas>
+    <div class="film__tint"></div>
+    <canvas class="film__fx"></canvas>
+    <div class="film__vignette"></div>
+    <div class="film__grain"></div>
+  </div>
+
+  <div class="loader" role="status">
+    <span class="loader__name">Ondine</span>
+    <span class="loader__bar"><i></i></span>
+    <span class="loader__pct">0%</span>
+  </div>
+
+  <header class="nav">
+    <a class="nav__mark" href="#top">Ondine</a>
+    <nav class="nav__links" aria-label="Collections"></nav>
+    <a class="nav__cta" href="#visit">Visit the maison</a>
+  </header>
+
+  <ol class="rail" aria-label="Chapters"></ol>
+
+  <main id="top">
+    <section class="walk" id="walk" aria-label="The walk">
+      <div class="walk__stage">
+        <div class="waves" aria-hidden="true"></div>
+        <div class="sweeps" aria-hidden="true"></div>
+
+        <div class="panel panel--hero" data-panel="hero">
+          <p class="hero__kicker" data-r>Maison de mode · Paris · Automne 2026</p>
+          <h1 class="hero__name">Ondine</h1>
+          <p class="hero__line" data-r>Six ways to be dressed. One walk.</p>
+          <span class="hero__hint" data-r>Scroll to begin</span>
+        </div>
+
+        <div class="chapters"></div>
+        <div class="timecode" aria-hidden="true"><span class="timecode__name">Entrée</span><span class="timecode__bar"><i></i></span><span class="timecode__t">00:00</span></div>
+      </div>
+    </section>
+
+    <section class="maison" id="maison" aria-labelledby="maison-title">
+      <div class="maison__text">
+        <p class="eyebrow">The maison</p>
+        <h2 id="maison-title">Made in small numbers, finished by hand.</h2>
+        <p>Ondine makes two collections a year and nothing in between. Every piece is cut in our Paris atelier from cloth we choose at the mill, sewn by people whose names we know, and finished to your measure if you ask. We would rather you owned less of ours and wore it more.</p>
+        <ul class="facts">
+          <li><b>2</b><span>collections a year</span></li>
+          <li><b>38</b><span>people in the atelier</span></li>
+          <li><b>14</b><span>days for an alteration</span></li>
+          <li><b>∞</b><span>repairs, for life, free</span></li>
+        </ul>
+      </div>
+      <div class="maison__services">
+        <article><h3>Private appointment</h3><p>An hour in the salon with a stylist, the collection on rails and nobody else. Tuesdays to Saturdays, by booking.</p></article>
+        <article><h3>Made to measure</h3><p>Tailoring and evening are fitted in the atelier upstairs. Two fittings, three weeks, yours forever.</p></article>
+        <article><h3>Care and repair</h3><p>Bring anything of ours back at any age. We press, re-line, re-knit and re-sequin at no charge.</p></article>
+      </div>
+    </section>
+
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div class="visit__text">
+        <p class="eyebrow">Visit</p>
+        <h2 id="visit-title">14 rue Saint-Honoré.</h2>
+        <p>Three floors in the 1st arrondissement, two minutes from the Tuileries. The salon is on the ground floor, the atelier above it, and the roof is for fittings in good weather.</p>
+        <dl class="visit__details">
+          <div><dt>Hours</dt><dd>Monday – Saturday, 10h – 19h<br />Sunday, closed</dd></div>
+          <div><dt>Telephone</dt><dd><a href="tel:+33142600014">+33 1 42 60 00 14</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:bonjour@ondine.paris">bonjour@ondine.paris</a></dd></div>
+          <div><dt>Métro</dt><dd>Tuileries (1), Pyramides (7, 14)</dd></div>
+        </dl>
+        <form class="book" novalidate>
+          <label>Book a private appointment
+            <div class="book__row">
+              <input type="email" name="email" placeholder="your@email.com" autocomplete="email" required />
+              <button class="btn" type="submit">Request</button>
+            </div>
+          </label>
+          <p class="book__done" hidden></p>
+        </form>
+      </div>
+      <div class="visit__map">
+        <iframe title="Map of 14 rue Saint-Honoré, Paris" loading="lazy" referrerpolicy="no-referrer"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=2.3120%2C48.8615%2C2.3310%2C48.8700&amp;layer=mapnik&amp;marker=48.8656%2C2.3212"></iframe>
+      </div>
+    </section>
+
+    <section class="letter" aria-labelledby="letter-title">
+      <h2 id="letter-title">The letter.</h2>
+      <p>One email when a collection arrives, one when the sale begins. Nothing else, ever.</p>
+      <form class="letter__form" novalidate>
+        <input type="email" name="email" placeholder="your@email.com" autocomplete="email" required aria-label="Email" />
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <p class="letter__done" hidden></p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__top">
+      <span class="foot__mark">Ondine</span>
+      <nav aria-label="Footer"><a href="#walk">Collections</a><a href="#maison">The maison</a><a href="#visit">Visit</a><a href="#">Shipping &amp; returns</a><a href="#">Privacy</a></nav>
+      <div class="foot__social"><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">WeChat</a></div>
+    </div>
+    <div class="foot__bottom">
+      <span>14 rue Saint-Honoré, 75001 Paris</span>
+      <span>© 2026 Asad · Ondine. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
